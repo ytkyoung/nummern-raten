@@ -1,0 +1,213 @@
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.game {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.game-text {
+  padding: 20px;
+}
+
+#custom-rounds {
+  display: inline;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.box {
+  border: 2px solid white;
+}
+
+// .box :nth-child(n + 2) {
+//   margin-top: 10px;
+// }
+
+.game-runden {
+  padding: 20px;
+}
+.game-karten {
+  height: 50vh;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 10px;
+}
+
+#fourth {
+  display: none;
+}
+#btn-guess {
+  display: none;
+}
+
+// 1 bis 100
+.hundred {
+  text-align: center;
+  padding: 5px;
+  background-color: #eeeeee;
+  transition: all 0.5s ease-out;
+}
+.hundred:hover {
+  background-color: lightgreen;
+}
+
+.indputCustom {
+  padding: 10px;
+}
+.indputCustom input {
+  transition: all 1s ease;
+}
+
+.restart {
+  position: absolute;
+  top: 21%;
+  height: 70.6%;
+  width: 80%;
+  transition: opacity 0.5s ease;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+}
+.restart-box {
+  @include flex(flex-start, flex-end, column);
+  width: 100%;
+  height: 50%;
+  margin-bottom: 20rem;
+}
+.restart h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.restart button {
+  position: fixed;
+  top: 10%;
+  font-size: 2rem;
+  width: 20rem;
+  height: 50px;
+  border: none;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.testHover {
+  background-color: #e5fcb1;
+}
+// toogle classes
+
+.fadeOut {
+  opacity: 0;
+  display: none;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+.fadeIn {
+  opacity: 1;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.gewinnZahlTog {
+  z-index: 4;
+  font-size: 8rem;
+  background-color: red;
+  color: white;
+  transition: all 1s ease;
+  pointer-events: none;
+}
+
+.lastNumberTog {
+  z-index: 4;
+  font-size: 8rem;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  transition: all 1s ease;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 789px) {
+  .game {
+    margin: 0 auto;
+    width: 100%;
+  }
+  #custom-rounds {
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+    display: inline;
+  }
+
+  #btn-reset {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .indputCustom {
+    padding: 0px;
+  }
+  #custom-rounds {
+    display: inline;
+    width: 60px;
+    margin-left: 0px;
+    padding: 5px;
+  }
+  .restart {
+    position: absolute;
+    top: 12%;
+    height: 80%;
+    width: 100%;
+    transition: opacity 0.5s ease;
+    background-color: white;
+    z-index: 2;
+  }
+  .restart-box {
+    @include flex(flex-start, flex-end, column);
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20rem;
+  }
+
+  .restart button {
+    position: fixed;
+    top: 5px;
+    font-size: 1.6rem;
+    width: 10rem;
+
+    border: none;
+  }
+  .game-text {
+    padding: 5px;
+  }
+  .game-runden {
+    padding: 5px;
+  }
+
+  .game-karten {
+    height: 50vh;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 10px;
+  }
+
+  .gewinnZahlTog {
+    font-size: 3rem;
+  }
+
+  .lastNumberTog {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

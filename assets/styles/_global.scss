@@ -1,0 +1,165 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: $font2;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: $text;
+}
+h1 {
+  font-size: 2rem;
+  // font-size: $header1;
+  // font-weight: lighter;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  // letter-spacing: -1.5px;
+  font-family: $font1;
+}
+h2 {
+  font-size: $header2;
+  font-family: $font1;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+}
+h3 {
+  font-size: $header3;
+  font-family: $font1;
+}
+h4 {
+  font-size: $header4;
+  font-family: $font1;
+  font-weight: normal;
+  letter-spacing: 0.25px;
+}
+h5 {
+  font-size: $header5;
+  font-family: $font1;
+}
+h6 {
+  font-size: $header6;
+  font-weight: medium;
+  font-family: $font1;
+  letter-spacing: 0.15px;
+}
+
+.subtitle1 {
+  font-size: 1.6rem;
+  font-weight: medium;
+  font-family: $font1;
+}
+.subtitle2 {
+  font-size: 1.4rem;
+  font-weight: medium;
+  font-family: $font1;
+}
+.body1 {
+  font-size: 1.6rem;
+  font-family: $font2;
+}
+.body2 {
+  font-size: 1.4rem;
+  font-family: $font2;
+}
+.caption {
+  font-size: 1.2px;
+  letter-spacing: 0.4px;
+  font-family: $font2;
+}
+.overline {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: $font2;
+  transition: all 1s ease;
+}
+
+button {
+  background-color: $dark-primary-color-700;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  // border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-family: $font2;
+  font-weight: medium;
+  letter-spacing: 1.25px;
+}
+
+button:hover {
+  background-color: $dark-primary-color-800;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $gray-text;
+}
+
+label {
+  font-size: 1.8rem;
+  padding: 4px;
+  // color: green;
+}
+
+// input[type="radio"] {
+//   font-size: 2rem;
+//   border: none;
+//   padding: 0 10px;
+//   margin: 0;
+//   width: 80%;
+//   background: none;
+// }
+
+input:focus,
+textarea:focus {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: $dark-primary-color-700;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: $dark-primary-color-700;
+  text-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+}

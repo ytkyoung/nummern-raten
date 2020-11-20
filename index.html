@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Number Guessing</title>
+  </head>
+  <body>
+    <main>
+      <section class="game">
+        <div class="game box">
+          <div class="game-text">
+            <h1 id="runden-anzahl">Rounds 0/4</h1>
+          </div>
+
+          <div class="game-runden">
+            <form id="form-choice" class="form-box" name="form-choice">
+              <div class="form-control">
+                <input
+                  id="vier-runden"
+                  name="runden"
+                  value="4"
+                  type="radio"
+                  checked
+                />
+                <label for="vier-runden">4</label>
+
+                <input id="fuenf-runden" name="runden" value="5" type="radio" />
+                <label for="fuenf-runden">5</label>
+                <input id="sechs-runden" name="runden" value="6" type="radio" />
+                <label for="sechs-runden">6</label>
+                <input id="custom" name="runden" value="custom" type="radio" />
+                <label for="custom">custom</label>
+                <!-- <label for="custom">custom</label> -->
+                <input
+                  id="custom-rounds"
+                  class="fadeOut"
+                  name="custom"
+                  value=""
+                  type="number"
+                />
+                <div class="indputCustom">
+                  <!-- <label for="custom-rounds">custom</label> -->
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="restart fadeOut">
+            <div class="restart-box">
+              <button id="replay">restart</button>
+            </div>
+          </div>
+          <div id="beam" class="game-karten"></div>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

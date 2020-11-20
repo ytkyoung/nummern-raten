@@ -1,0 +1,34 @@
+$header1: 2.5rem;
+$header2: 1.8rem;
+$header3: 2.5rem;
+$header4: 2.3rem;
+$header5: 8rem;
+$header6: 2rem;
+$font1: "Roboto Mono", monospace;
+// $font1: "Roboto Slab", serif;
+$font2: "Roboto", sans-serif;
+$font3: "Nanum Gothic Coding", monospace;
+
+$text: 2rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$primary-color-800: #5d1049;
+$primary-color-900: #4e0d3a;
+$primary-color-700: #720d3a;
+$secondary-color: #e30425;
+$dark-primary-color-700: #344955;
+$dark-primary-color-800: #232f34;
+$dark-primary-color-600: #4a6572;
+$dark--primarysecondary-color: #f9aa33;
+$background-color: #303030;
+$gray-text: #2c2c2c;
+$padding: 5rem;
+
+@mixin flex($justifiy, $algin, $direction) {
+  display: flex;
+  justify-content: $justifiy;
+  align-items: $algin;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "game";
